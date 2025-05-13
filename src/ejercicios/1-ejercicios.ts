@@ -1,3 +1,6 @@
+import promptSync from 'prompt-sync';
+
+
 //Ejercicios datos primitivos
 /* 1. Suma de dos números
 •	Objetivo: Comprender la declaración de variables y operadores aritméticos básicos.
@@ -35,3 +38,16 @@
 
 
 // prueba
+
+// Ejercicio Andres
+//Aqui los pido
+const prompt = promptSync();
+
+let numStri1: string | null = prompt("Ingresa el primer numero");
+let numStri2: string | null = prompt("Ingresa el segundo numero");
+/**Aqui los convierto a tipo number */
+let num1: number = Number(numStri1);
+let num2: number = Number(numStri2);
+
+let resul: number = num1 + num2;
+console.log("La suma es: " + resul);
