@@ -1,15 +1,12 @@
-// ejercicio 1
-var name = "Sofia";
+"use strict";
+const name = "Sofia";
 console.log(name);
-// ejercicio 2
-var numero = 99;
+const numero = 99;
 console.log(numero);
-// ejercicio 3
-var aprobado = true;
+let aprobado = true;
 console.log(aprobado);
-// ejercicio 4
-var observation = null;
+let observation = null;
 console.log(observation);
-//ejercicio 5
-var pendiente = undefined;
+const pendiente = undefined;
 console.log(pendiente);
+//# sourceMappingURL=ejercicios.js.map
