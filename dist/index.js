@@ -1,6 +1,6 @@
 "use strict";
-function greet(name) {
-    return `Hola, ${name}!`;
-}
-console.log(greet("TypeScript"));
+let mensaje = "Hello";
+mensaje = "Carlos";
+mensaje = "Hola Carlos ";
+console.log(mensaje);
 //# sourceMappingURL=index.js.map
