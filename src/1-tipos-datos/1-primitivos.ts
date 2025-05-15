@@ -1,46 +1,68 @@
-// Anotacion Explícita
-let nombre: string = "Laura"; // string
-let edad: number = 30; // number
-let esActiva: boolean = true; // boolean
+// dato tipo string texto
+let name1: string = "Carlos";
+console.log(name1)
 
-//Inferencia  (ts detecta el tipo automaticamente)
-let ciudad = "Bogota"; // string
-let peso = 65.5; // number
-let inscrito = false; // boolean
+// dato tipo number numerico
+let edad: number = 30;
+console.log(edad);
 
-// Tipo explícito
-let firstName: string = "Dylan"; //tipo string
+// dato tipo boolean 
+let esActiva1: boolean = true;
+console.log(esActiva1)
 
-console.log(typeof firstName)
+//Inferencia (Typescript detecta el tipo automaticamente)
+let ciudad = "Bogota"; // Es un string
+let peso = 65.5; // Es un number
+let inscrita = false; // Es un boolean 
 
-// null, undefined
-let vacio: null = null;
-let noDefinido: undefined = undefined
+/* Es buena practica la anotación explicita en grandes proyectos */
 
-// ejemplo
-let edad: number | null = null; //puede tener un numero o estar vacio
 
-function obtenerNombre() string | undefined {
-    return undefined; // aun no se a obtenido el nombre
+// dato tipo null y undefined
+let vacio1: null = null;
+let noDefinido: undefined = undefined;
 
-}
+console.log(vacio1);
+console.log(noDefinido);
 
-// any Tipo universal (evitar en lo posble)
-// permite cualquien tipo. 
-// Desactiva las ventajas de TypeScritp.
+/* tipo any
+tipo universal
+Evitar usarlo ya que desactiva las ventajas de TS */
 
-let dato: any = "texto";
+let dato: any = "text";
 dato = 123;
 dato = true;
-// se deve evitar 
+console.log(dato);
 
-// unkowun - Similiar a any, pero más SVGAnimatedEnumeration.
+/* ⚠️ Evita usar any a menos que estés migrando JS o accediendo a APIs muy dinámicas. */
+
+/* dato unknown
+similiar a any, pero mas seguro */
 let valor: unknown;
-valor = "Hola";
+
+valor = "hola";
 valor = 123;
 
-// No se puede usar sin comprobar el tipo
+// no puedes usarlo directamente sin comprobar el tipo
 if (typeof valor === "string"){
-    console.log(valor.toUpperCase());
+    console.log(valor.toLocaleLowerCase());
 }
 
+/* 🧠 unknown te obliga a verificar el tipo antes de usarlo, lo que mejora la seguridad del código. */
+
+/* ✍️ Inferencia vs Anotación Explícita
+inferencia: let edad = 20 >> código mas limpio
+Anotacion: let edad: number = 20 >> Código más claro y mantenible */
+
+/* 🎯 Buenas prácticas:
+Usa inferencia para valores inmediatos y obvios
+
+Usa anotación para:
+
+Argumentos de funciones
+
+Retornos
+
+Objetos complejos
+
+Variables sin asignación inmediata */
