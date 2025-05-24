@@ -72,17 +72,11 @@ var prompt = promptSync();
  */
 var numValidar = prompt('Ingresa un numero para saber si es par, impar o multpilo de 3 o no multplo de 3  ');
 var numRes = Number(numValidar);
-if (numRes % 2 === 0) {
-    console.log("Es par");
-}
-else if (numRes % 2 !== 0) {
-    console.log("Es impar");
-}
-else if (numRes % 3 === 0) {
-    console.log("Es multiplo de 3");
+if (numRes % 2 === 0 && numRes % 3 === 0) {
+    console.log("Es par y multiplo de 3");
 }
 else {
-    console.log("No es multplo de 3");
+    console.log("Es impar y no es multiplo de 3");
 }
 /* 7. Uso de template literals
 •	Explicación: Se usa la sintaxis de backticks ` para insertar variables dentro de un string.
