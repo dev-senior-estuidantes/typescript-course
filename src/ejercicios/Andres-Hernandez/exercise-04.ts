@@ -7,6 +7,7 @@ let num: number = 10;
 let str: string = num.toString();
 console.log(str);
 
+
 /* Respuesta pregunta
 El metodo Number() y se usa para convertir un string a number de la siguiente manera:
 */

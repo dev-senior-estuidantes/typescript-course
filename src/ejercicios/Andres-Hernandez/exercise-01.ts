@@ -16,3 +16,4 @@ let number2: number = Number(promptSync("Ingresa el segundo número:"));
 let sum: number = number1 + number2;
 console.log(`La suma de ${number1} y ${number2} es: ${sum}`);
 // Se utiliza Number() para convertir la entrada del usuario (que es un string) a un número
+
