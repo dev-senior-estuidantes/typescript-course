@@ -11,3 +11,6 @@ console.log(result);
 En este caso, edad (que es un número) se convierte automaticamente en un string 
 antes de la concatenacion
 */
+
+// Nota...
+// Realizar la concatenación con Template Literals ***
