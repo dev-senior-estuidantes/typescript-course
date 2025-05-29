@@ -91,3 +91,4 @@ if (numRes % 2 === 0 && numRes % 3 === 0) {
 •	Explicación: Se usa la sintaxis de backticks ` para insertar variables dentro de un string.
 •	Objetivo: Utilizar template strings.
 •	Pregunta: ¿Cuál es la ventaja de usar template strings sobre la concatenación con +? */
+// estoy pensandooo... 
